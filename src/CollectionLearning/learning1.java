@@ -1,6 +1,4 @@
-package CollectionLearning;
-
-import com.sun.deploy.util.StringUtils;
+package collectionlearning;
 
 import java.util.ArrayList;
 import java.util.List;
