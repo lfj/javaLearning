@@ -1,4 +1,4 @@
-package 线程;
+package thread;
 
 public class MyRunnable implements Runnable {
     @Override

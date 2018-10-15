@@ -1,4 +1,4 @@
-package 线程.SynchronizeLearning;
+package thread.SynchronizeLearning;
 
 public class ThreadDomain18 {
 

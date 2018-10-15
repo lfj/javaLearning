@@ -1,4 +1,4 @@
-package 线程.mythread;
+package thread.mythread;
 
 public class CountOperate extends Thread {
     public CountOperate() {

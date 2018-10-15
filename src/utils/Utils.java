@@ -1,4 +1,4 @@
-package 常用工具;
+package utils;
 
 import java.util.Properties;
 

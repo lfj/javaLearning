@@ -1,4 +1,4 @@
-package 线程;
+package thread;
 
 /**
  * 这里考的是Thread类中start()和run()方法的区别了。start()用来启动一个线程，当调用start方法后，系统才会开启一个新的线程，进而调用run()方法
