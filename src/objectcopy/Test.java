@@ -3,6 +3,7 @@ package objectcopy;
 import org.apache.commons.beanutils.BeanUtils;
 
 class Address implements Cloneable {
+
     private String add;
 
     public String getAdd() {

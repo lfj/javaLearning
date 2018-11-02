@@ -1,7 +1,9 @@
 package collectionlearning;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class learning1 {
     public static void main(String[] args) {
@@ -17,5 +19,9 @@ public class learning1 {
 
         onlineUserList.remove("纬地");
         int a = 0;
+
+        Set srt = new HashSet();
+        List newList = null;
+        srt.addAll(newList);
     }
 }

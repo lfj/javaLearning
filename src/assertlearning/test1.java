@@ -1,4 +1,4 @@
-package assertLearning;
+package assertlearning;
 
 public class test1 {
 
