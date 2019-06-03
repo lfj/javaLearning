@@ -1,5 +1,7 @@
 package thread;
 
+import static java.lang.System.out;
+
 public class MyThread extends Thread {
 
     private int count = 5;
@@ -24,24 +26,26 @@ public class MyThread extends Thread {
     public static void main(String[] args) {
 
         /* 不共享数据的运行结果 */
-//        MyThread a=new MyThread("A");
-//        MyThread b=new MyThread("B");
-//        MyThread c=new MyThread("C");
-//        a.start();
-//        b.start();
-//        c.start();
+        out.println("********** 不共享数据的运行结果 **********");
+        MyThread a = new MyThread("A");
+        MyThread b = new MyThread("B");
+        MyThread c = new MyThread("C");
+        a.start();
+        b.start();
+        c.start();
 
         /* 共享数据的运行结果 */
-        MyThread mythread=new MyThread();
-        Thread a1=new Thread(mythread,"A");
-        Thread b1=new Thread(mythread,"B");
-        Thread c1=new Thread(mythread,"C");
-        Thread d1=new Thread(mythread,"D");
-        Thread e1=new Thread(mythread,"E");
-        a1.start();
-        b1.start();
-        c1.start();
-        d1.start();
-        e1.start();
+//        out.println("********** 共享数据的运行结果 **********");
+//        MyThread mythread = new MyThread();
+//        Thread a1 = new Thread(mythread,"A");
+//        Thread b1 = new Thread(mythread,"B");
+//        Thread c1 = new Thread(mythread,"C");
+//        Thread d1 = new Thread(mythread,"D");
+//        Thread e1 = new Thread(mythread,"E");
+//        a1.start();
+//        b1.start();
+//        c1.start();
+//        d1.start();
+//        e1.start();
     }
 }

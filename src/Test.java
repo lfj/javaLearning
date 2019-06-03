@@ -1,6 +1,14 @@
+import java.util.Map;
+import java.util.HashMap;
+import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Vector;
 
+/**
+ * 优化java程序的方法
+ */
 public class Test {
 
     private String lfj;
@@ -10,41 +18,33 @@ public class Test {
     }
 
     public static void main(String[] args){
-//        String tag = "uc0007LoginMsg";
-//        Set tagSet = new HashSet();
-//        tagSet.add("uc0007LoginMsg");
-//        tagSet.add("uc0007Register");
-//        tagSet.add("uc0007Certification");
-//        if (tagSet.contains(tag)) {
-//            System.out.println("在集群里");
-//        } else {
-//            System.out.println("不在集群里");
-//        }
-        //System.out.println(new Date().getTime() + "");
-        //System.out.println(System.currentTimeMillis());
+        String abc = "abc" + 'a';
+        /* 1.使用System.arraycopy代替循环复制数组 */
+        int[] array1 = new int[5];
+        for (int index = 0; index < array1.length; index ++) {
+            array1[index] = index;
+        }
+        int[] array2 = new int[20];
+        System.arraycopy(array1, 0, array2, 10, 2);
 
-        Date date1 = new Date();
-        System.out.println(date1);
+        /* 为Vector和HashTable还有HashMap定义初始大小 */
+        Vector vector = new Vector(10);
+        vector.add(1);
+        vector.add("kkk");
+        String kkk = "kkk";
+        vector.remove(kkk);
 
-        Date date2 = new Date(date1.getTime());
-        System.out.println(date2);
+        Hashtable hashtable = new Hashtable();
+        hashtable.put("Moon", "b");
+        //hashtable.put(null, "b");
+        //hashtable.put("Jupiter", null);
+        hashtable.put("Moon", "b");
+        hashtable.put("Moon", "c");
 
-        Date date3 = new Date(2018, 1, 12, 3, 15);
+        Map map = new HashMap(10, 0.75F);
 
-        Date date4 = new Date(2018, 2, 12, 3, 15);
+        String str = "hello";
+        String str1 = new String("hello");
 
-        date3.before(date4);
-
-        Date date5 = new Date();
-        System.out.println("date5=" + date5);
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
-        String time2 = dateFormat.format(date5);
-        System.out.println("time2=" + time2);
-
-        String startTime = "2018-01-21 11:11:11";
-        SimpleDateFormat dateFormat2 = new SimpleDateFormat ("yyyy-MM-dd hh:mm:ss");
-        String time = dateFormat2.format((String) startTime);
-        int i = 0;
     }
 }

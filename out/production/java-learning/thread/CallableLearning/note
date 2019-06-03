@@ -1,0 +1,4 @@
+FutureTask类
+
+FutureTask类实现了RunnableFuture接口，而Runnable接口继承了Runnable和Future接口，所以说FutureTask是一个提供异步计算的结果的任务
+

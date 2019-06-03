@@ -1,3 +1,5 @@
 /out/production/javalearning/*
 javalearning.iml
 /.idea/*
+*.class
+java-learning.iml
