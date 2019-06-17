@@ -1,4 +1,4 @@
-package innerClassLearning;
+package innerclasslearning;
 
 public class Circle {
     private double radius = 0;

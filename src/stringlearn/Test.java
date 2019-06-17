@@ -1,9 +1,5 @@
 package stringlearn;
 
-import com.aliyun.oss.ClientConfiguration;
-import com.aliyun.oss.OSSClient;
-import sun.net.NetProperties;
-
 import static java.lang.System.out;
 
 public class Test {
@@ -16,8 +12,20 @@ public class Test {
         String subStr1 = str1.substring(0, 4);
         out.println("subStr1 = " + subStr1);
 
-        String a = NetProperties.get("http.proxyHost");
-        String b = NetProperties.get("http.proxyPort");
-        }
+        String s2 = "a" + "b"; /* 常量池 */
+        String s1 = "ab"; /* 常量池 */
+        String s3 = "a";
+        String s4 = "b";
+        String s5 = s3 + s4; /* 堆区*/
+        String s6 = new String("ab"); /* 堆区*/
+
+        out.println(s1 == s2);
+        out.println(s1 == s5);
+        out.println(s2 == s5);
+        out.println(s6 == s5);
+        out.println(s6 == s2);
+        out.println(s6 == s1);
+
+
     }
 }

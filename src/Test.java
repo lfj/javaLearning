@@ -1,10 +1,6 @@
-import java.util.Map;
-import java.util.HashMap;
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
+import java.util.*;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Vector;
 
 /**
  * 优化java程序的方法
