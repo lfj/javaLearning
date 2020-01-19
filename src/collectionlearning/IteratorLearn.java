@@ -3,6 +3,7 @@ package collectionlearning;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import static java.lang.System.out;
 
 public class IteratorLearn {
@@ -18,7 +19,7 @@ public class IteratorLearn {
             out.println(iterator.next());
         }
         out.println("使用第二种遍历方式");
-        for (String name: list) {
+        for (String name : list) {
             out.println(name);
         }
     }

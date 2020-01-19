@@ -1,6 +1,6 @@
 package objectcopy;
 
-public class Soldier implements Cloneable{
+public class Soldier implements Cloneable {
 
     private String id;
 
@@ -31,7 +31,7 @@ public class Soldier implements Cloneable{
         Soldier soldier1 = new Soldier();
         Soldier soldier2 = null;
         try {
-            soldier2 = (Soldier)soldier1.clone();
+            soldier2 = (Soldier) soldier1.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }

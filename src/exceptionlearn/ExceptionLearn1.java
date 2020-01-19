@@ -10,8 +10,8 @@ public class ExceptionLearn1 {
         FileInputStream fileIn = new FileInputStream("E:\\a.txt");
         int word;
         //read方法会抛出IOException
-        while((word =  fileIn.read())!=-1) {
-            System.out.print((char)word);
+        while ((word = fileIn.read()) != -1) {
+            System.out.print((char) word);
         }
         //close方法会抛出IOException
         fileIn.close();

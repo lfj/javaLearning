@@ -17,16 +17,16 @@ class Address implements Cloneable {
     @Override
     public Object clone() {
         Address addr = null;
-        try{
-            addr = (Address)super.clone();
-        }catch(CloneNotSupportedException e) {
+        try {
+            addr = (Address) super.clone();
+        } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
         return addr;
     }
 }
 
-class Student implements Cloneable{
+class Student implements Cloneable {
     private int number;
 
     private Address addr;
@@ -50,12 +50,12 @@ class Student implements Cloneable{
     @Override
     public Object clone() {
         Student stu = null;
-        try{
-            stu = (Student)super.clone();   //浅复制
-        }catch(CloneNotSupportedException e) {
+        try {
+            stu = (Student) super.clone();   //浅复制
+        } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-        stu.addr = (Address)addr.clone();   //深度复制
+        stu.addr = (Address) addr.clone();   //深度复制
         return stu;
     }
 }

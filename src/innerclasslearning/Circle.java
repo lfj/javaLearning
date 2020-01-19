@@ -5,7 +5,7 @@ public class Circle {
     public static int count = 1;
     public String fileMaker = "lfj";
 
-    public Circle(double radius){
+    public Circle(double radius) {
         this.radius = radius;
         getDrawInstance().drawShape();
     }

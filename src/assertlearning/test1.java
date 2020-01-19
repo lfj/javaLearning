@@ -2,7 +2,7 @@ package assertlearning;
 
 public class test1 {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         /* 这个成员变量的值可以变，但最终必须还是回到原值5 */
         int i = 5;
         assert (i == 6);

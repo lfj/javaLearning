@@ -1,6 +1,7 @@
 import java.util.*;
 
 import java.text.SimpleDateFormat;
+import java.util.stream.Collectors;
 
 /**
  * 优化java程序的方法
@@ -13,11 +14,11 @@ public class Test {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String abc = "abc" + 'a';
         /* 1.使用System.arraycopy代替循环复制数组 */
         int[] array1 = new int[5];
-        for (int index = 0; index < array1.length; index ++) {
+        for (int index = 0; index < array1.length; index++) {
             array1[index] = index;
         }
         int[] array2 = new int[20];
@@ -42,5 +43,11 @@ public class Test {
         String str = "hello";
         String str1 = new String("hello");
 
+        List<String> list = new ArrayList();
+        list.stream().filter(Objects::nonNull).map(Test::addOne).collect(Collectors.toList());
+    }
+
+    public static String addOne(String str) {
+        return str + "one";
     }
 }

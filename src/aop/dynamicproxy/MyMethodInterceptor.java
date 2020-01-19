@@ -29,7 +29,7 @@ public class MyMethodInterceptor implements MethodInterceptor {
         enhancer.setSuperclass(HelloConcrete.class);
         enhancer.setCallback(new MyMethodInterceptor());
 
-        HelloConcrete hello = (HelloConcrete)enhancer.create();
+        HelloConcrete hello = (HelloConcrete) enhancer.create();
         System.out.println(hello.sayHello("I love you!"));
     }
 }

@@ -5,12 +5,13 @@ import static java.lang.System.out;
 public class MyThread extends Thread {
 
     private int count = 5;
-    public MyThread(String name){
+
+    public MyThread(String name) {
         super();
         this.setName(name);
     }
 
-    public MyThread(){
+    public MyThread() {
         super();
     }
 

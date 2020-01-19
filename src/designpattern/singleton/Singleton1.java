@@ -47,13 +47,13 @@ class Singleton2 {
 /**
  * 第三种方法巧妙融合了以上的两种优点
  */
-class Singleton3{
+class Singleton3 {
 
     private Singleton3() {
         out.println("Singleton3 has been created!");
     }
 
-    private static class Singleton3Holder{
+    private static class Singleton3Holder {
         private static Singleton3 instance = new Singleton3();
     }
 

@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class CollectionSort {
     public static void main(String[] args) {
-        List<Person> personList = new ArrayList<Person>(){
+        List<Person> personList = new ArrayList<Person>() {
             {
                 add(new Person("纬地", 25));
                 add(new Person("崔汝童", 23));
@@ -25,12 +25,13 @@ public class CollectionSort {
                 return o1.compare(o1, o2);
             }
         });
-        for (Person person: personList) {
+        for (Person person : personList) {
             System.out.println("name = " + person.getName() + ",age = " + person.getAge());
         }
     }
 }
-class Person implements Comparator<Person>{
+
+class Person implements Comparator<Person> {
 
     private String name;
 

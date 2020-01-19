@@ -14,7 +14,7 @@ public class People {
 
     private int year;
 
-    public static void  judgePeople() {
+    public static void judgePeople() {
         System.out.println("People类的方法被调用！");
     }
 }

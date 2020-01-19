@@ -24,4 +24,9 @@ public enum RiskTypeEnum {
     public String getDescription() {
         return description;
     }
+
+    public static void main(String[] args) {
+        RiskTypeEnum riskTypeEnum = null;
+        String str = riskTypeEnum.toString();
+    }
 }

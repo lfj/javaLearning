@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /**
  * 重写compareTo方法实现按颜值来进行排序
  */
-public class Girl implements Comparable<Girl>{
+public class Girl implements Comparable<Girl> {
 
     private String name;
 

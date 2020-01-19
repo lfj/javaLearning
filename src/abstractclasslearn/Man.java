@@ -2,7 +2,7 @@ package abstractclasslearn;
 
 public class Man extends People {
 
-    public static void  judgePeople() {
+    public static void judgePeople() {
         System.out.println("Man类的方法被调用！");
     }
 

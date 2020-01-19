@@ -5,7 +5,7 @@ import java.util.Properties;
 public class Utils {
 
     /* 判断java运行的系统是否是linux */
-    public static boolean isOSLinux(){
+    public static boolean isOSLinux() {
         Properties prop = System.getProperties();
         String os = prop.getProperty("os.name");
         if (os != null && os.toLowerCase().indexOf("linux") > -1) {

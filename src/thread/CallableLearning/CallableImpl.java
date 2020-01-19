@@ -19,7 +19,7 @@ public class CallableImpl implements Callable<String> {
         return this.acceptStr + " append some chars and return it!";
     }
 
-    public static void main (String[] args) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
         Callable<String> callable = new CallableImpl("my callable test");
         FutureTask<String> task = new FutureTask<>(callable);
         long beginTime = System.currentTimeMillis();

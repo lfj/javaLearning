@@ -10,7 +10,7 @@ import static java.lang.System.out;
 
 public class Test {
 
-    public static String getLocalTime(String format, String utcTime){
+    public static String getLocalTime(String format, String utcTime) {
 
         try {
             if (null == format || "".equals(format)) {
@@ -28,7 +28,7 @@ public class Test {
                 SimpleDateFormat localFormater = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 localFormater.setTimeZone(TimeZone.getDefault());
                 localTime = localFormater.format(sdf.parse(utcTime).getTime());
-            } catch(ParseException e) {
+            } catch (ParseException e) {
                 //公共云
                 format = "yyyy-MM-dd'T'HH:mm'Z'";
                 sdf = new SimpleDateFormat(format);

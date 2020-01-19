@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         float f1 = 3.4F;
-        float f2 = (float)3.4;
+        float f2 = (float) 3.4;
 
         /* 自动装箱 */
         Integer a = new Integer(3);
