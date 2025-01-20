@@ -1,5 +1,11 @@
 package lambda;
 
+import com.google.common.collect.Lists;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Java8Tester {
 
     public static void main(String[] args) {
@@ -29,6 +35,14 @@ public class Java8Tester {
                 System.out.println("Hello " + message);
         greetingService1.sayMessage("China");
         greetingService1.sayMessage("Japan");
+
+        List<String> list = Lists.newArrayList("a", "b", "c", "d");
+        list.stream().map(str -> {
+            return str + "";
+        }).collect(Collectors.toList());
+
+        Stream<String> stream = Stream.of("one", "two", "three", "four");
+        stream.peek(System.out::println);
     }
 
     private int operate(int a, int b, MathOperation mathOperation) {

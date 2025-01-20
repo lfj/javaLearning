@@ -15,6 +15,7 @@ public class HashMapLearn {
         Map<String, String[]> paramMap = new HashMap<>();
         paramMap.put("Nazi Germany", new String[]{"DivisionA", "DivisionB"});
         paramMap.put("Soviet Union", new String[]{"Division62", "Division63"});
+        paramMap.put("Japan", new String[]{"Division63", "Division63"});
         for (Map.Entry<String, String[]> entry : paramMap.entrySet()) {
             String key = entry.getKey();
             String[] value = entry.getValue();

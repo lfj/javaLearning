@@ -60,5 +60,7 @@ public class Test {
         System.out.println("列表中所有数的平均数：" + stats.getAverage());
 
         System.out.println("the process finish");
+
+
     }
 }

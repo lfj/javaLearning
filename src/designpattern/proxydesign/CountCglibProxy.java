@@ -1,7 +1,7 @@
 package designpattern.proxydesign;
 
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
+import io.lettuce.core.dynamic.intercept.MethodInterceptor;
+import io.lettuce.core.dynamic.intercept.MethodInvocation;
 
 /**
  * 使用cglib实现动态代理

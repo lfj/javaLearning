@@ -6,14 +6,17 @@ package thread;
  */
 public class Thread1 {
     public static void main(String args[]) {
-        Thread t = new Thread() {
-            public void run() {
-                pong();
+        Thread t1 = new Thread(() -> {
+            System.out.println("我要开启新生活");
+            try {
+                Thread.sleep(3);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        };
-        t.run();
-        System.out.print("ping");
-
+            System.out.println("睡眠结束了");
+        }
+        );
+        t1.start();
     }
 
     static void pong() {

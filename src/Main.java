@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class Main {
 
@@ -33,5 +35,10 @@ public class Main {
         System.out.println(Math.round(-11.5));
 
         Collections.emptyList();
+
+        String str = "255.255.255.255";
+
+        List<String> stringList = Arrays.asList("1", "2", "3", "a", "b");
+        stringList.stream().peek(i -> System.out.println(i)).count();
     }
 }

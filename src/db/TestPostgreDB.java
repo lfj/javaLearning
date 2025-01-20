@@ -25,7 +25,6 @@ public class TestPostgreDB {
         try {
             Class.forName(JDBC_POSTGRE_DRIVER);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
             System.out.println(" 实例化Statement对象...");
             String sql = "select id,name,sex,idcard,time from websites where id=? limit 2";
             pstmt = conn.prepareStatement(sql);

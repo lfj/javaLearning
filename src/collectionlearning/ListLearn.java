@@ -1,7 +1,5 @@
 package collectionlearning;
 
-import net.sf.cglib.core.CollectionUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,17 +25,13 @@ public class ListLearn {
         listA.add(2);
         listA.add(3);
         listA.add(4);
-        listA.add(3);
-        listA.add(4);
 
         List<Integer> listB = new ArrayList<>();
-        listB.add(3);
-        listB.add(4);
         listB.add(5);
         listB.add(6);
 
         /* 求并集 */
-        //listA.addAll(listB);
+        listA.addAll(listB);
 
         /* 求交集 */
         //listA.retainAll(listB);
@@ -49,5 +43,11 @@ public class ListLearn {
         for (Integer item : listB) {
             out.println(item);
         }
+
+        List<String> list11 = new ArrayList<>();
+        List<String> list22 = new ArrayList<>();
+        list22.add("a");
+        list22.add("b");
+        list1.addAll(list22);
     }
 }

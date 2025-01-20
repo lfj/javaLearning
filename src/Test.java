@@ -1,6 +1,4 @@
 import java.util.*;
-
-import java.text.SimpleDateFormat;
 import java.util.stream.Collectors;
 
 /**
@@ -45,6 +43,18 @@ public class Test {
 
         List<String> list = new ArrayList();
         list.stream().filter(Objects::nonNull).map(Test::addOne).collect(Collectors.toList());
+
+        String strkkkkk = "dsfdsfsdfsdrewrcxvxcfsgdfgergdfvxcvwer4534dfgfdxsdfsdfsdfsdgdfgsdfsdfdsfds2313";
+        System.out.println(strkkkkk.substring(0, 50));
+
+        Long priority = 100L;
+        Long circleNum = 1L;
+        Long result = (long)((priority + 1 / (1 + circleNum)) * 1000000);
+
+        double d = Double.MIN_VALUE;
+
+        String str123 = "123|sfdg";
+        str123.contains("|");
     }
 
     public static String addOne(String str) {

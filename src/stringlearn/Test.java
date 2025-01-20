@@ -1,5 +1,9 @@
 package stringlearn;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import static java.lang.System.out;
 
 public class Test {
@@ -26,6 +30,7 @@ public class Test {
         out.println(s6 == s2);
         out.println(s6 == s1);
 
-
+        String strlfj = "a,b,c,d,e,f";
+        List<String> array = Arrays.asList(strlfj.split(",")).stream().limit(4).collect(Collectors.toList());
     }
 }

@@ -63,7 +63,7 @@ public class Girl implements Comparable<Girl> {
     }
 
     public static void main(String[] args) {
-        TreeSet<Girl> girls = new TreeSet<>();
+        TreeSet<Girl> girls = new TreeSet();
         girls.add(new Girl("lyp", 24, 5));
         girls.add(new Girl("crt", 23, 7));
         girls.add(new Girl("lyj", 25, 6));

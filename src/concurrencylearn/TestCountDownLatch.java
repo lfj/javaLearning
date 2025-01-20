@@ -1,10 +1,14 @@
 package concurrencylearn;
 
+import java.nio.charset.Charset;
 import java.util.concurrent.CountDownLatch;
 
 public class TestCountDownLatch {
 
     public static void main(String[] args) {
+        String str = "36|1059584350972218368";
+        System.out.println(str.getBytes(Charset.forName("UTF-8")));
+
         final CountDownLatch latch = new CountDownLatch(5);
         LatchDemo latchDemo = new LatchDemo(latch);
         long begin = System.currentTimeMillis();
